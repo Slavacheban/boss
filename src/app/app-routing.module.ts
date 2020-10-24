@@ -5,7 +5,7 @@ import {BsComponent} from "./bs/bs.component";
 import {CaughtComponent} from "./caught/caught.component";
 
 const routes: Routes = [
-  {path: '..', component: NearlyComponent},
+  {path: '', redirectTo: '/nearly', pathMatch: 'full'},
   {path: 'nearly', component: NearlyComponent},
   {path: 'bs', component: BsComponent},
   {path: 'caught', component: CaughtComponent},
