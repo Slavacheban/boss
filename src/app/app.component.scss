@@ -1,0 +1,38 @@
+.ng-select.boss-select {
+  .ng-select-container {
+    height: 31px !important;
+    min-height: 31px !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+
+  &.ng-select-multiple .ng-select-container {
+    height: auto !important;
+  }
+
+  .ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
+    font-size: 13px !important;
+  }
+
+}
+
+.boss-select.ng-select.ng-select-disabled > .ng-select-container {
+  background-color: #e9ecef;
+}
+
+.ng-dropdown-panel.boss-select .ng-dropdown-panel-items .ng-option {
+  font-size: 13px !important;
+}
+
+.dropdown-item {
+  font-size: 14px;
+}
+
+.input-group-append {
+  .ng-select.boss-select {
+    .ng-select-container {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<div *ngIf="isDrawingSpinner"
+     class="spinner-wrapper">
+  <i class="fa fa-spinner fa-spin fa-3x fa-fw"
+     aria-hidden="true"></i>
+</div>
+<div class="row ml-1 mt-3" [formGroup]="nearlyForm">
+  <div class="col-2 ">
+    <div class="form-group">
+      <label class="col-form-label-sm"> Number</label>
+      <div class="input-group">
+        <input type="text"
+               formControlName="number"
+               class="form-control form-control-sm"
+               [(ngModel)]="number"
+               placeholder="Enter number">
+      </div>
+    </div>
+  </div>
+  <div class="col-2" >
+    <div class="form-group">
+      <label class="col-form-label-sm">Deep</label>
+      <ng-select  class="boss-select"
+                 formControlName="deep"
+                 [items]="deepList"
+                 [clearable]="true"
+                 [clearOnBackspace]="false"
+                 [hideSelected]="true"
+                 [(ngModel)]="deep"
+                 placeholder="Select tag">
+      </ng-select>
+    </div>
+  </div>
+</div>
+
+<!--<div class="row">-->
+<!--  <div class="col">-->
+<!--    <ngx-datatable-->
+<!--      #table-->
+<!--      class="bootstrap"-->
+<!--      style="overflow: visible !important;"-->
+<!--      [columns]="dtColumns"-->
+<!--      [columnMode]="'force'"-->
+<!--      [headerHeight]="30"-->
+<!--      [footerHeight]="30"-->
+<!--      [rowHeight]="'auto'"-->
+<!--      [limit]="13"-->
+<!--      [rows]="moneyCodesList">-->
+<!--    </ngx-datatable>-->
+<!--  </div>-->
+<!--</div>-->
